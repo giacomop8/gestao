@@ -1,0 +1,163 @@
+/* //////////////////////////// */
+/* TAGS GLOBAIS */
+html, body { height: 100%; margin: auto; background-color: rgba(0, 0, 0, 0.075); }
+button{ text-transform: uppercase; font-weight: bold; }
+ul { list-style-type: none; padding: 0; }
+li { list-style: none; line-height: 50px; text-decoration: none; color: white; }
+li:hover { background-color: gray; cursor: pointer; }
+a { color: white; text-decoration: none; list-style: none; }
+hr { margin: 0 20px }
+section { width: 100%; font-family: 'Ubuntu', sans-serif; }
+nav { width: 250px; height: 100%; }
+table { width: 100%; border-collapse: collapse; text-align: center; background-color: white; font-size: 1em;}
+thead { background-color: rgb(223, 223, 223); }
+tr { border-bottom: 2px solid rgb(223, 223, 223); }
+td, th { padding: 10px;  font-weight: bold; }
+tr:active { background-color: rgba(0, 0, 0, 0.075); }
+tr:hover { background-color: rgba(0, 0, 0, 0.075); }
+th { text-transform: uppercase; }
+#itemTh {
+    width: 35%;
+    text-align: center;
+}
+#itemTd {
+    width: 35%;
+    text-align: left;
+}
+
+/* //////////////////////////// */
+/* CONTAINER GLOBAL */
+.container { display: flex;  }
+/* //////////////////////////// */
+/* MENU LATERAL */
+.navbar { font-family: 'Anek Latin', sans-serif; display: block; background-color: rgb(41, 41, 41); color: white; width: 250px; height: 100vh; box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.329); }
+#img-link { padding-left: 30px; height: 16px; }
+#li-link { padding-left: 10px; font-weight: bold; color: rgb(235, 235, 235); }
+#toggle { display: none; height: 40px; }
+#titulo-menu { background-color: rgb(26, 26, 26); line-height: 60px; text-align: center; font-weight: bold; }
+
+/* //////////////////////////// */
+/* CONTEUDO */
+#conteudo { height: auto; margin: 20px; border-radius: 7px; background-color: white; }
+
+#lista {
+    margin: 20px;
+    overflow-y: auto;
+}
+
+#flex { display: flex; }
+#texto { display: block; padding: 20px; width: 50%; }
+#agenda { display: block; padding: 20px; }
+#cadastro-produto { display: block; padding: 20px; }
+#titulo-ficha { padding: 20px 20px 0 20px; text-align: center; }
+#titulo-form { font-weight: bold; font-size: 1.1em; }
+input#dados { width: 100%; height: 40px; padding: 5px; font-size: 1em; border-radius: 5px; border: 1px solid rgb(194, 194, 194); }
+#btn-cadastro-usuario { width: 200px; font-family: 'Ubuntu', sans-serif; font-size: 1em; margin: 20px; background-color: rgb(6, 29, 80); color: white; padding: 15px; border: none; border-radius: 5px; cursor: pointer; }    
+#btn-cadastro-usuario:hover { cursor: pointer; background-color: rgb(17, 53, 133); }
+
+#btn-cadastro-usuario:active {
+    background-color: rgb(41, 102, 233);
+    color: black;
+}
+
+#modal-cadastro{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.795);
+}
+#modal-conteudo{
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: #eee;
+    box-shadow: 0 0 2px #fff;
+    padding: 10px;
+}
+#modal-editar{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.795);
+}
+#modal-conteudo{
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: #eee;
+    box-shadow: 0 0 2px #fff;
+    padding: 10px;
+}
+#btn-novo-form{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1em;
+    margin: 20px;
+    width: 200px;
+    background-color: rgb(6, 29, 80);
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#btn-novo-form:hover{
+    background-color: rgb(17, 53, 133);
+    cursor: pointer;
+}
+#btn-novo-form:active{
+    background-color: rgb(41, 102, 233);
+    color: black;
+}
+#btn-modal{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1em;
+    margin: 20px;
+    width: 200px;
+    background-color: rgb(151, 13, 13);
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#btn-modal:hover{
+    background-color: rgb(209, 22, 22);
+}
+#btn-modal:active{
+    background-color: rgb(243, 71, 71);
+    color: black;
+}
+
+@media(max-width: 830px) {
+    #modal-conteudo{
+        overflow-x: auto;
+    }
+    .container{
+        display: block;
+    }
+    .navbar{
+        width: 100vw;
+        height: 100%;
+    }
+    #toggle{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #menu, #usuario{
+        display: none;
+    }
+    #flex{
+        display: block;
+    }
+    #texto{
+        width: auto;
+    }
+    table{
+        width: 100%;
+    }
+}
