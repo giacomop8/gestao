@@ -103,7 +103,7 @@
             
             mysqli_query($conexao, $update);
             
-            echo "<script> window.location.href = 'http://localhost/projetos/gestao2/clientes.php' </script>";
+            echo "<script> window.location.href = 'http://localhost/projetos/gestao/clientes.php' </script>";
         }
     }
 

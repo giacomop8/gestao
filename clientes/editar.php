@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Editando Cliente</title>
     <script src="../script.js"></script>
-    <link rel="stylesheet" href="http://localhost/projetos/gestao2/estilo.css">
+    <link rel="stylesheet" href="http://localhost/projetos/gestao/estilo.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">

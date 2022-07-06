@@ -6,5 +6,5 @@ $sql = "DELETE FROM clientes WHERE id_cliente=$id_cliente";
 
 mysqli_query($conexao, $sql);
 
-header('Location: http://localhost/projetos/gestao2/clientes.php');
+header('Location: http://localhost/projetos/gestao/clientes.php');
 ?>
